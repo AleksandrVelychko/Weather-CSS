@@ -1,0 +1,154 @@
+:root {
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+.clear::after,
+.clear::before {
+  content: " ";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
+
+/* Main Styles */
+
+body {
+  font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+  background: #3399cc;
+  border: 20px solid #2b81ac;
+}
+
+header h1 {
+  margin-left: 240px;
+  padding: 30px 0;
+  font-size: 27px;
+  color: #ffffff;
+}
+
+.weather {
+}
+
+.container {
+  text-align: center;
+  font-size: 0px;
+  margin-left: 240px;
+  margin-right: 240px;
+  color: #fff;
+}
+.weather-list li {
+  border: 0 solid #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 30px 10px;
+  border: 3px solid #fff;
+  font-size: 26px;
+  width: 25%;
+  transition: all 0.1s ease-in;
+}
+
+.weather-list:hover > li {
+  opacity: 0.5;
+}
+
+.city-name {
+  margin-bottom: 20px;
+}
+
+.weather-list li .temperature::after {
+  content: "°C";
+}
+
+.wi {
+  font-size: 34px;
+}
+
+.weather-list li .temperature,
+.weather-list li .wi {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.weather-list li:hover {
+  background: transparent;
+  opacity: 1;
+}
+
+.weather-list li .cities-lisbon {
+  background: #3399cc;
+  width: 15%;
+}
+
+.weather-list li.grid-50 {
+  width: 50%;
+}
+
+.weather-list li.grid-100 {
+  width: 100%;
+}
+
+.cities-paris {
+  background: #33cccc;
+}
+
+.cities-belgrad {
+  background: #996699;
+}
+
+.cities-moscow {
+  background: #c24747;
+}
+
+.cities-tel-aviv {
+  background: #e2674a;
+}
+
+.cities-cair {
+  background: #ffcc66;
+}
+
+.cities-new-york {
+  background: #99cc99;
+}
+
+.cities-new-delhi {
+  background: #669999;
+}
+
+.cities-san-francisco {
+  background: #cc6699;
+}
+
+.cities-tokyo {
+  background: #339966;
+}
+
+.cities-sydney {
+  background: #666699;
+}
+
+footer {
+  margin-left: 240px;
+  color: #fff;
+  font-size: 20px;
+  padding: 30px 0;
+}
